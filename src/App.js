@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import Greet from './components/greet';
+import { Component } from 'react';
+import Eventhandler from './components/eventhandler';
+import EventBind from './components/EventBind';
+// import Welcome from './components/welcome';
+// import Hello from './components/hello';
+// import Message from './components/state'
+// import Setstate from './components/setstate';
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Eventhandler></Eventhandler>
+        <EventBind></EventBind>
+        {/* <Greet name="Bhuvi" attribute="cute" >
+        <button>Click me</button>
+        </Greet> */}
+          
+        {/* // <Welcome name="papa" attribute="Handsome">
+            // <p> Gundamma</p>
+        // </Welcome>
+        // <Hello></Hello> 
+        // <Message></Message>
+        // <Setstate></Setstate> */}
+      </div>
+    );
+  }
 }
-
 export default App;
